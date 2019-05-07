@@ -129,6 +129,7 @@
       background-color: #fff;
       width: 420px;
       display: none;
+      z-index: 500;
       box-shadow: 0 0 5px 1px rgba(114, 114, 114, 0.2); }
       .main-header_nav_search-options-show {
         display: block; }
@@ -198,10 +199,14 @@
     .main-header_user-section .notifications-button {
       position: relative; }
       .main-header_user-section .notifications-button div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1px;
         -webkit-transform: translateY(-10%);
                 transform: translateY(-10%);
-        width: 13px;
-        height: 13px;
+        width: 12px;
+        height: 12px;
         background-color: red;
         font-size: 10px;
         color: #fff;
@@ -254,6 +259,7 @@
           -webkit-transform: translateX(-50%);
                   transform: translateX(-50%); }
         .main-header_nav_items {
+          z-index: 1000;
           position: fixed;
           flex-direction: column;
           height: 100vh;
